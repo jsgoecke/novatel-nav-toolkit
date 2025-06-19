@@ -1,0 +1,663 @@
+==================================================
+[UDP] Received 97 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26008b9a7d5e479967ccd9c82b84d1ffebcca0aebe9c1a7e7e2600d3a210bcdab78d6c1a3631811de1e79c0971c1b54dd5036f33c81cbae9b6983a66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c204617e
+[MAIN] Received ADS-B data callback with 97 bytes
+[ADSB] Attempting to parse: 7e26008b9a7d5e479967ccd9c82b84d1ffebcca0aebe9c1a7e7e2600d3a210bcdab78d6c1a3631811de1e79c0971c1b54dd5036f33c81cbae9b6983a66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c204617e
+[ADSB] Processing hex message: 7e26008b9a7d5e479967ccd9c82b84d1ffebcca0aebe9c1a7e7e2600d3a210bcdab78d6c1a3631811de1e79c0971c1b54dd5036f33c81cbae9b6983a66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c204617e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 120 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e260072465a74fae71ddef26ae9e39ec690454fe263be7e7e2600cea963d39af7805474fd156688882bcab69db9ea2b0e3dd0b4f15c9abcdbd28054f9d24aa7e7e03679aec1d4f39ea2dee93d77a39c284175a8b35ef370ad0bb6f4c2a9e67e7e26008e3f035eef149cbc8dc44fbb435ddcf19a290c2f7e
+[MAIN] Received ADS-B data callback with 120 bytes
+[ADSB] Attempting to parse: 7e260072465a74fae71ddef26ae9e39ec690454fe263be7e7e2600cea963d39af7805474fd156688882bcab69db9ea2b0e3dd0b4f15c9abcdbd28054f9d24aa7e7e03679aec1d4f39ea2dee93d77a39c284175a8b35ef370ad0bb6f4c2a9e67e7e26008e3f035eef149cbc8dc44fbb435ddcf19a290c2f7e
+[ADSB] Processing hex message: 7e260072465a74fae71ddef26ae9e39ec690454fe263be7e7e2600cea963d39af7805474fd156688882bcab69db9ea2b0e3dd0b4f15c9abcdbd28054f9d24aa7e7e03679aec1d4f39ea2dee93d77a39c284175a8b35ef370ad0bb6f4c2a9e67e7e26008e3f035eef149cbc8dc44fbb435ddcf19a290c2f7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 165 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e260045a166fcca05d66e5f99c8dee1b3566a0d5c7e7e2600fec2f0bc50222abf988808f9095af38184ccc2c96109f974ab927a6a01d9d48666636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c20d417e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e2600e0c3f23171f6c33a981b23544bfc763700818d2187c6595ca458cbaaa477837c8f42b8b3454a3dc3b88c2dc1d47e
+[MAIN] Received ADS-B data callback with 165 bytes
+[ADSB] Attempting to parse: 7e260045a166fcca05d66e5f99c8dee1b3566a0d5c7e7e2600fec2f0bc50222abf988808f9095af38184ccc2c96109f974ab927a6a01d9d48666636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c20d417e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e2600e0c3f23171f6c33a981b23544bfc763700818d2187c6595ca458cbaaa477837c8f42b8b3454a3dc3b88c2dc1d47e
+[ADSB] Processing hex message: 7e260045a166fcca05d66e5f99c8dee1b3566a0d5c7e7e2600fec2f0bc50222abf988808f9095af38184ccc2c96109f974ab927a6a01d9d48666636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c20d417e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e2600e0c3f23171f6c33a981b23544bfc763700818d2187c6595ca458cbaaa477837c8f42b8b3454a3dc3b88c2dc1d47e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 126 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26003b9d0b4f46050e6dc3ea50a99e7017ce7c3ce41dd4de61030ad688c0f7a27aa1d12787357bc9ec9ca91194cfe97a3e61e93d77a39c284175a8b35ef370ad0bb6f4c299157e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e7e26002f051be146040e33080c855ad9a1711962dbcb3c7e
+[MAIN] Received ADS-B data callback with 126 bytes
+[ADSB] Attempting to parse: 7e26003b9d0b4f46050e6dc3ea50a99e7017ce7c3ce41dd4de61030ad688c0f7a27aa1d12787357bc9ec9ca91194cfe97a3e61e93d77a39c284175a8b35ef370ad0bb6f4c299157e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e7e26002f051be146040e33080c855ad9a1711962dbcb3c7e
+==================================================
+    Novatel ProPak6 Navigation Data (NMEA)
+==================================================
+Timestamp: 2025-06-16 21:57:45 UTC
+
+Position:  No GPS fix
+Altitude:  No data
+Speed:     No data
+Heading:   No data
+GPS:       No data
+
+------------------------------
+Statistics:
+  ADS-B messages parsed: 0
+  Aircraft tracked: 0
+  Parse errors: 0
+  Success rate: 0.0%
+  UDP Listener: Active
+==================================================
+[UDP] Received 72 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e2600adc3cf9aefae409877694f9c2be546a5923b44036df5efb85474795bed3246db66241a3efc2296d8dd70324859d48eb6e93d77a39c284175a8b35ef370ad0bb6f4c23e067e
+[MAIN] Received ADS-B data callback with 72 bytes
+[ADSB] Attempting to parse: 7e2600adc3cf9aefae409877694f9c2be546a5923b44036df5efb85474795bed3246db66241a3efc2296d8dd70324859d48eb6e93d77a39c284175a8b35ef370ad0bb6f4c23e067e
+[ADSB] Processing hex message: 7e2600adc3cf9aefae409877694f9c2be546a5923b44036df5efb85474795bed3246db66241a3efc2296d8dd70324859d48eb6e93d77a39c284175a8b35ef370ad0bb6f4c23e067e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 191 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e2600e17525b154e5b7e206582eca592d4820eb8f0a896ec508082c8cbaa33d11812be901de3bfa8e8d2b09efe1237aead685e93d77a39c284175a8b35ef370ad0bb6f4c25b967e7e26007190d6377d5dad8d465032243d3e32cec163fa0e487e7e2600b3c3739a44e3060d714d7974c2b5c9f2a646bf077e7e26004e375d285be2bbfe137d5ef001209cc64a20cec52bf05190a3f2cb2699edad8206bd45155f4b24e0f2a57e7e2600f3019e3c6c770c10aa21d89f1e204fb05778bd6c7e
+[MAIN] Received ADS-B data callback with 191 bytes
+[ADSB] Attempting to parse: 7e2600e17525b154e5b7e206582eca592d4820eb8f0a896ec508082c8cbaa33d11812be901de3bfa8e8d2b09efe1237aead685e93d77a39c284175a8b35ef370ad0bb6f4c25b967e7e26007190d6377d5dad8d465032243d3e32cec163fa0e487e7e2600b3c3739a44e3060d714d7974c2b5c9f2a646bf077e7e26004e375d285be2bbfe137d5ef001209cc64a20cec52bf05190a3f2cb2699edad8206bd45155f4b24e0f2a57e7e2600f3019e3c6c770c10aa21d89f1e204fb05778bd6c7e
+[ADSB] Processing hex message: 7e2600e17525b154e5b7e206582eca592d4820eb8f0a896ec508082c8cbaa33d11812be901de3bfa8e8d2b09efe1237aead685e93d77a39c284175a8b35ef370ad0bb6f4c25b967e7e26007190d6377d5dad8d465032243d3e32cec163fa0e487e7e2600b3c3739a44e3060d714d7974c2b5c9f2a646bf077e7e26004e375d285be2bbfe137d5ef001209cc64a20cec52bf05190a3f2cb2699edad8206bd45155f4b24e0f2a57e7e2600f3019e3c6c770c10aa21d89f1e204fb05778bd6c7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 189 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e2600b1584ac8332885e4410e5eef11fb4e1ad3c8e27e7e260098dcf452e416dd2671897ba35ce129774e807e7e26004298debf2d04893fb90effb808ce6258215b065806e25bf39052c2d78a233441e901de3bfa8e8d2b09efe1237aead685e93d77a39c284175a8b35ef370ad0bb6f4c2e91c7e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e2600637bb1c150ce1891a8fb828cf27d5d91687bed3ed62f5fc157e0e7bc83edeaa67a940357873c757b4b8fd937042c7e
+[MAIN] Received ADS-B data callback with 189 bytes
+[ADSB] Attempting to parse: 7e2600b1584ac8332885e4410e5eef11fb4e1ad3c8e27e7e260098dcf452e416dd2671897ba35ce129774e807e7e26004298debf2d04893fb90effb808ce6258215b065806e25bf39052c2d78a233441e901de3bfa8e8d2b09efe1237aead685e93d77a39c284175a8b35ef370ad0bb6f4c2e91c7e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e2600637bb1c150ce1891a8fb828cf27d5d91687bed3ed62f5fc157e0e7bc83edeaa67a940357873c757b4b8fd937042c7e
+[ADSB] Processing hex message: 7e2600b1584ac8332885e4410e5eef11fb4e1ad3c8e27e7e260098dcf452e416dd2671897ba35ce129774e807e7e26004298debf2d04893fb90effb808ce6258215b065806e25bf39052c2d78a233441e901de3bfa8e8d2b09efe1237aead685e93d77a39c284175a8b35ef370ad0bb6f4c2e91c7e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e2600637bb1c150ce1891a8fb828cf27d5d91687bed3ed62f5fc157e0e7bc83edeaa67a940357873c757b4b8fd937042c7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 102 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26008145749658667565a0e356679175617225eba66309c88c0126eee31c3b820a9ec38a756540b5077f61375d2470ea6452e93d77a39c284175a8b35ef370ad0bb6f4c277867e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e
+[MAIN] Received ADS-B data callback with 102 bytes
+[ADSB] Attempting to parse: 7e26008145749658667565a0e356679175617225eba66309c88c0126eee31c3b820a9ec38a756540b5077f61375d2470ea6452e93d77a39c284175a8b35ef370ad0bb6f4c277867e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e
+==================================================
+    Novatel ProPak6 Navigation Data (NMEA)       
+==================================================
+Timestamp: 2025-06-16 21:57:46 UTC
+
+Position:  No GPS fix
+Altitude:  No data
+Speed:     No data
+Heading:   No data
+GPS:       No data
+
+------------------------------
+Statistics:
+  ADS-B messages parsed: 0
+  Aircraft tracked: 0
+  Parse errors: 0
+  Success rate: 0.0%
+  UDP Listener: Active
+==================================================
+[UDP] Received 96 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26005baff8c8d3020c2933ab907bc77b4f64230a12e1de6b01b5cc64c271dbc61ceead9ab33710aef95b408cd19ff4d8b543e93d77a39c284175a8b35ef370ad0bb6f4c298287e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e
+[MAIN] Received ADS-B data callback with 96 bytes
+[ADSB] Attempting to parse: 7e26005baff8c8d3020c2933ab907bc77b4f64230a12e1de6b01b5cc64c271dbc61ceead9ab33710aef95b408cd19ff4d8b543e93d77a39c284175a8b35ef370ad0bb6f4c298287e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e
+[ADSB] Processing hex message: 7e26005baff8c8d3020c2933ab907bc77b4f64230a12e1de6b01b5cc64c271dbc61ceead9ab33710aef95b408cd19ff4d8b543e93d77a39c284175a8b35ef370ad0bb6f4c298287e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 96 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26002bf3b2e00c7c4e4d1863678eacd5762f84b0cdc27e7e2600c69b90c83a144b7caf58260a5aec42785b4df4caef6475f3c15a21f2c1eebc679e353ccf89e3f54e081487453d8c3fcbe93d77a39c284175a8b35ef370ad0bb6f4c213357e
+[MAIN] Received ADS-B data callback with 96 bytes
+[ADSB] Attempting to parse: 7e26002bf3b2e00c7c4e4d1863678eacd5762f84b0cdc27e7e2600c69b90c83a144b7caf58260a5aec42785b4df4caef6475f3c15a21f2c1eebc679e353ccf89e3f54e081487453d8c3fcbe93d77a39c284175a8b35ef370ad0bb6f4c213357e
+[ADSB] Processing hex message: 7e26002bf3b2e00c7c4e4d1863678eacd5762f84b0cdc27e7e2600c69b90c83a144b7caf58260a5aec42785b4df4caef6475f3c15a21f2c1eebc679e353ccf89e3f54e081487453d8c3fcbe93d77a39c284175a8b35ef370ad0bb6f4c213357e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 214 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26008528f71c2217b7ab84d901c5e73644defc6b7e7e2600c530a4a87069d99f50ed60126b8af42a64cdf52be283a4e0f3299f79b63765b32db8e42951983f2102ab2fe850043c13e93d77a39c284175a8b35ef370ad0bb6f4c26db27e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e2600c0c533b806460e72c2a915ad8c7ffdbd2c18b2e27e7e2600f588620e30d8904aeac59c3f6af9c0ef505b70950baf6547469d332930b7879f6b0ae4999b37c3aef3417a930d7e7e26008b9a7d5e479967ccd9c82b84d1ffebcca0aebe9c1a7e
+[MAIN] Received ADS-B data callback with 214 bytes
+[ADSB] Attempting to parse: 7e26008528f71c2217b7ab84d901c5e73644defc6b7e7e2600c530a4a87069d99f50ed60126b8af42a64cdf52be283a4e0f3299f79b63765b32db8e42951983f2102ab2fe850043c13e93d77a39c284175a8b35ef370ad0bb6f4c26db27e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e2600c0c533b806460e72c2a915ad8c7ffdbd2c18b2e27e7e2600f588620e30d8904aeac59c3f6af9c0ef505b70950baf6547469d332930b7879f6b0ae4999b37c3aef3417a930d7e7e26008b9a7d5e479967ccd9c82b84d1ffebcca0aebe9c1a7e
+[ADSB] Processing hex message: 7e26008528f71c2217b7ab84d901c5e73644defc6b7e7e2600c530a4a87069d99f50ed60126b8af42a64cdf52be283a4e0f3299f79b63765b32db8e42951983f2102ab2fe850043c13e93d77a39c284175a8b35ef370ad0bb6f4c26db27e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e2600c0c533b806460e72c2a915ad8c7ffdbd2c18b2e27e7e2600f588620e30d8904aeac59c3f6af9c0ef505b70950baf6547469d332930b7879f6b0ae4999b37c3aef3417a930d7e7e26008b9a7d5e479967ccd9c82b84d1ffebcca0aebe9c1a7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 126 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e2600feeca012a48d7fbe4ad778795b1e3a66ffa08b928fb7b8feabae7cdcc69c0c65f87916d6ca304ffe87d614c5727f5147e93d77a39c284175a8b35ef370ad0bb6f4c2f94b7e7e2600d531e5e9a6a6b83627cd84582251c842e3a6961e7e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e
+[MAIN] Received ADS-B data callback with 126 bytes
+[ADSB] Attempting to parse: 7e2600feeca012a48d7fbe4ad778795b1e3a66ffa08b928fb7b8feabae7cdcc69c0c65f87916d6ca304ffe87d614c5727f5147e93d77a39c284175a8b35ef370ad0bb6f4c2f94b7e7e2600d531e5e9a6a6b83627cd84582251c842e3a6961e7e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e
+[ADSB] Processing hex message: 7e2600feeca012a48d7fbe4ad778795b1e3a66ffa08b928fb7b8feabae7cdcc69c0c65f87916d6ca304ffe87d614c5727f5147e93d77a39c284175a8b35ef370ad0bb6f4c2f94b7e7e2600d531e5e9a6a6b83627cd84582251c842e3a6961e7e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+==================================================
+    Novatel ProPak6 Navigation Data (NMEA)
+==================================================
+Timestamp: 2025-06-16 21:57:47 UTC
+
+Position:  No GPS fix
+Altitude:  No data
+Speed:     No data
+Heading:   No data
+GPS:       No data
+
+------------------------------
+Statistics:
+  ADS-B messages parsed: 0
+  Aircraft tracked: 0
+  Parse errors: 0
+  Success rate: 0.0%
+  UDP Listener: Active
+==================================================
+[UDP] Received 97 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e2600fa56be100e6dae6f7d5db3d0fce3c274cc9adfa8366a1ea40d1343a38612b5b7aef87916d6ca304ffe87d614c5727f5147e93d77a39c284175a8b35ef370ad0bb6f4c2bcb27e7e2600c3075b03ae2ff76b48e8eef39518eaa9440d663d7e
+[MAIN] Received ADS-B data callback with 97 bytes
+[ADSB] Attempting to parse: 7e2600fa56be100e6dae6f7d5db3d0fce3c274cc9adfa8366a1ea40d1343a38612b5b7aef87916d6ca304ffe87d614c5727f5147e93d77a39c284175a8b35ef370ad0bb6f4c2bcb27e7e2600c3075b03ae2ff76b48e8eef39518eaa9440d663d7e
+[ADSB] Processing hex message: 7e2600fa56be100e6dae6f7d5db3d0fce3c274cc9adfa8366a1ea40d1343a38612b5b7aef87916d6ca304ffe87d614c5727f5147e93d77a39c284175a8b35ef370ad0bb6f4c2bcb27e7e2600c3075b03ae2ff76b48e8eef39518eaa9440d663d7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 142 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26004d77bea91c40d97d5df56326fcd8b68b243d8f7e7e2600bd0716c873ec3f0875b81f21465e49cc683007377d5e8080f3b1df8ddcc1d527ec2db8e42951983f2102ab2fe850043c13e93d77a39c284175a8b35ef370ad0bb6f4c272be7e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e
+[MAIN] Received ADS-B data callback with 142 bytes
+[ADSB] Attempting to parse: 7e26004d77bea91c40d97d5df56326fcd8b68b243d8f7e7e2600bd0716c873ec3f0875b81f21465e49cc683007377d5e8080f3b1df8ddcc1d527ec2db8e42951983f2102ab2fe850043c13e93d77a39c284175a8b35ef370ad0bb6f4c272be7e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e
+[ADSB] Processing hex message: 7e26004d77bea91c40d97d5df56326fcd8b68b243d8f7e7e2600bd0716c873ec3f0875b81f21465e49cc683007377d5e8080f3b1df8ddcc1d527ec2db8e42951983f2102ab2fe850043c13e93d77a39c284175a8b35ef370ad0bb6f4c272be7e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 145 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e2600c0c533b806460e72c2a915ad8c7ffdbd2c18b2e27e7e26000fdad9dbde2171d153a287d967456bc7240b5d85abae24189e813c4d6f395cf977b13578e472d3fcf4906d4c437e7e2600d9ab8ec3e1ffa0b84ddd24a8bef603ccc1d50d53fc16303f72db600e9c98865054f9d24aa7e7e03679aec1d4f39ea2dee93d77a39c284175a8b35ef370ad0bb6f4c26acf7e
+[MAIN] Received ADS-B data callback with 145 bytes
+[ADSB] Attempting to parse: 7e2600c0c533b806460e72c2a915ad8c7ffdbd2c18b2e27e7e26000fdad9dbde2171d153a287d967456bc7240b5d85abae24189e813c4d6f395cf977b13578e472d3fcf4906d4c437e7e2600d9ab8ec3e1ffa0b84ddd24a8bef603ccc1d50d53fc16303f72db600e9c98865054f9d24aa7e7e03679aec1d4f39ea2dee93d77a39c284175a8b35ef370ad0bb6f4c26acf7e
+[ADSB] Processing hex message: 7e2600c0c533b806460e72c2a915ad8c7ffdbd2c18b2e27e7e26000fdad9dbde2171d153a287d967456bc7240b5d85abae24189e813c4d6f395cf977b13578e472d3fcf4906d4c437e7e2600d9ab8ec3e1ffa0b84ddd24a8bef603ccc1d50d53fc16303f72db600e9c98865054f9d24aa7e7e03679aec1d4f39ea2dee93d77a39c284175a8b35ef370ad0bb6f4c26acf7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 127 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e260068b19a72cc85a6d43f51536a0e9b7d5ecf837b2f067e7e26009386357bc35902478a57a0aff92b876b7a39a53a2049b48822c19c592aa21720e901de3bfa8e8d2b09efe1237aead685e93d77a39c284175a8b35ef370ad0bb6f4c2a9ff7e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e
+[MAIN] Received ADS-B data callback with 127 bytes
+[ADSB] Attempting to parse: 7e260068b19a72cc85a6d43f51536a0e9b7d5ecf837b2f067e7e26009386357bc35902478a57a0aff92b876b7a39a53a2049b48822c19c592aa21720e901de3bfa8e8d2b09efe1237aead685e93d77a39c284175a8b35ef370ad0bb6f4c2a9ff7e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e
+==================================================
+    Novatel ProPak6 Navigation Data (NMEA)       
+==================================================
+Timestamp: 2025-06-16 21:57:48 UTC
+
+Position:  No GPS fix
+Altitude:  No data
+Speed:     No data
+Heading:   No data
+GPS:       No data
+
+------------------------------
+Statistics:
+  ADS-B messages parsed: 0
+  Aircraft tracked: 0
+  Parse errors: 0
+  Success rate: 0.0%
+  UDP Listener: Active
+==================================================
+[UDP] Received 72 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e260097783776a66f8c78aeadc2ea276140c9f470909bda369787de68c4a8843231131e4ebc2bc6d21611ad106c05b30a2d5de93d77a39c284175a8b35ef370ad0bb6f4c237d57e
+[MAIN] Received ADS-B data callback with 72 bytes
+[ADSB] Attempting to parse: 7e260097783776a66f8c78aeadc2ea276140c9f470909bda369787de68c4a8843231131e4ebc2bc6d21611ad106c05b30a2d5de93d77a39c284175a8b35ef370ad0bb6f4c237d57e
+[ADSB] Processing hex message: 7e260097783776a66f8c78aeadc2ea276140c9f470909bda369787de68c4a8843231131e4ebc2bc6d21611ad106c05b30a2d5de93d77a39c284175a8b35ef370ad0bb6f4c237d57e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 141 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e260037549358ee20d30088acf224667d5e38f1bf3044d27e7e26006d399c10667cab5907be26fc797c2f2c9ecc7e7e2600f2648705d83eb58eb90c425eeb31c5f52f5cd7f18ead321dda5fd5cbed638f4e66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c28ade7e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e
+[MAIN] Received ADS-B data callback with 141 bytes
+[ADSB] Attempting to parse: 7e260037549358ee20d30088acf224667d5e38f1bf3044d27e7e26006d399c10667cab5907be26fc797c2f2c9ecc7e7e2600f2648705d83eb58eb90c425eeb31c5f52f5cd7f18ead321dda5fd5cbed638f4e66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c28ade7e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e
+[ADSB] Processing hex message: 7e260037549358ee20d30088acf224667d5e38f1bf3044d27e7e26006d399c10667cab5907be26fc797c2f2c9ecc7e7e2600f2648705d83eb58eb90c425eeb31c5f52f5cd7f18ead321dda5fd5cbed638f4e66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c28ade7e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 145 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26003ecd56b3633568a4f8147589f6365d8d4f11eb5e7e7e26002912c9d6fe2ef0f7f42b6db0e12c2f5045091dac84e108c49848632a94ab945733e65943372c543f776551a2a97e7e26007a4e8e94fd6862b140a91a096d002cbf946fc7c9bafddf4a99690497d1a3c897bcf0c01d6c152c4045bcba9b17bd0b31e93d77a39c284175a8b35ef370ad0bb6f4c277347e
+[MAIN] Received ADS-B data callback with 145 bytes
+[ADSB] Attempting to parse: 7e26003ecd56b3633568a4f8147589f6365d8d4f11eb5e7e7e26002912c9d6fe2ef0f7f42b6db0e12c2f5045091dac84e108c49848632a94ab945733e65943372c543f776551a2a97e7e26007a4e8e94fd6862b140a91a096d002cbf946fc7c9bafddf4a99690497d1a3c897bcf0c01d6c152c4045bcba9b17bd0b31e93d77a39c284175a8b35ef370ad0bb6f4c277347e
+[ADSB] Processing hex message: 7e26003ecd56b3633568a4f8147589f6365d8d4f11eb5e7e7e26002912c9d6fe2ef0f7f42b6db0e12c2f5045091dac84e108c49848632a94ab945733e65943372c543f776551a2a97e7e26007a4e8e94fd6862b140a91a096d002cbf946fc7c9bafddf4a99690497d1a3c897bcf0c01d6c152c4045bcba9b17bd0b31e93d77a39c284175a8b35ef370ad0bb6f4c277347e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 151 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e7e2600dbaa77c5225d0af17fad88a597227d5d8e6a5d3c137e7e260073c1bdb526ebaed338fb0779e0e16785731debf8f61809f1a594d8f7ecde78c266241a3efc2296d8dd70324859d48eb6e93d77a39c284175a8b35ef370ad0bb6f4c20c827e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e
+[MAIN] Received ADS-B data callback with 151 bytes
+[ADSB] Attempting to parse: 7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e7e2600dbaa77c5225d0af17fad88a597227d5d8e6a5d3c137e7e260073c1bdb526ebaed338fb0779e0e16785731debf8f61809f1a594d8f7ecde78c266241a3efc2296d8dd70324859d48eb6e93d77a39c284175a8b35ef370ad0bb6f4c20c827e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e
+[ADSB] Processing hex message: 7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e7e2600dbaa77c5225d0
+==================================================
+    Novatel ProPak6 Navigation Data (NMEA)       
+==================================================
+Timestamp: 2025-06-16 21:57:49 UTC
+
+Position:  No GPS fix
+Altitude:  No data
+Speed:     No data
+Heading:   No data
+GPS:       No data
+
+------------------------------
+Statistics:
+  ADS-B messages parsed: 0
+  Aircraft tracked: 0
+  Parse errors: 0
+  Success rate: 0.0%
+  UDP Listener: Active
+==================================================
+[UDP] Received 73 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26000b43272ca85aa8eabe55397ae2220e3054b278fd7d5de92681f0cbb9dd3eb6fc096663
+==================================================
+    Novatel ProPak6 Navigation Data (NMEA)       
+==================================================
+Timestamp: 2025-06-16 21:57:50 UTC
+Position:  No GPS fix
+Altitude:  No data
+Speed:     No data
+Heading:   No data
+GPS:       No data
+
+------------------------------
+Statistics:
+  ADS-B messages parsed: 0
+  Aircraft tracked: 0
+  Parse errors: 0
+  Success rate: 0.0%
+  UDP Listener: Stopped
+==================================================
+[MAIN] UDP listener stopped unexpectedly
+
+Stopping navigation listener...
+UDP Listener stopped
+Navigation listener stopped
+PS C:\Users\USER\Documents\wifi-udp-location> python .\main.py --adsb --port 4000
+ADS-B mode enabled
+============================================================
+Starting Novatel ProPak6 Navigation Data Toolkit...
+============================================================
+Configuration:
+  UDP Host: 0.0.0.0
+  UDP Port: 4000
+  Socket Timeout: 5.0s
+C:\Users\USER\Documents\wifi-udp-location\navigation_display.py:45: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  lines.append(f"Timestamp: {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}")
+==================================================
+    Novatel ProPak6 Navigation Data (NMEA)
+==================================================
+Timestamp: 2025-06-16 21:59:06 UTC
+
+Position:  No GPS fix
+Altitude:  No data
+Speed:     No data
+Heading:   No data
+GPS:       No data
+
+------------------------------
+Statistics:
+  ADS-B messages parsed: 0
+  Aircraft tracked: 0
+  Parse errors: 0
+  Success rate: 0.0%
+  UDP Listener: Active
+==================================================
+[UDP] Received 232 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26004d14404565ebbb26bf7c026bf470c34adf5da1f457e5d0e60c486a1dd926254000fa3d68bc46b9a0477e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e7e260002bd1d25418069ae94710c38e6624ecf772b737e7e26008f029cb4619e1d5cb04ee3d44a073116e0247e7e2600c23a6d2e92d21e7ad57c2594820920c03e5268e55408dafd544a2462a72cb14266636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c283377e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e260078fafb1bb75b1e73153cb172b57838aae94a9e967e    
+[MAIN] Received ADS-B data callback with 232 bytes
+[ADSB] Attempting to parse: 7e26004d14404565ebbb26bf7c026bf470c34adf5da1f457e5d0e60c486a1dd926254000fa3d68bc46b9a0477e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e7e260002bd1d25418069ae94710c38e6624ecf772b737e7e26008f029cb4619e1d5cb04ee3d44a073116e0247e7e2600c23a6d2e92d21e7ad57c2594820920c03e5268e55408dafd544a2462a72cb14266636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c283377e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e260078fafb1bb75b1e73153cb172b57838aae94a9e967e
+[ADSB] Processing hex message: 7e26004d14404565ebbb26bf7c026bf470c34adf5da1f457e5d0e60c486a1dd926254000fa3d68bc46b9a0477e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e7e260002bd1d25418069ae94710c38e6624ecf772b737e7e26008f029cb4619e1d5cb04ee3d44a073116e0247e7e2600c23a6d2e92d21e7ad57c2594820920c03e5268e55408dafd544a2462a72cb14266636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c283377e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e260078fafb1bb75b1e73153cb172b57838aae94a9e967e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 147 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e2600b3634e8b7679c6994ca853e7434e6f7f29bc42067e7e26007d5d83be70aaf7eb9598ec4f3315729e0cdd3783dd6c3f3ab58eaf3ff3565a2579f21707b732d3f8d18a7d5ec284297e7e2600df24a6ae47961f5d61b0322485407ad4082463e0c70af41c11f79a9bb588e9215ae43ceacaa553777033cc846504201de93d77a39c284175a8b35ef370ad0bb6f4c21b2b7e
+[MAIN] Received ADS-B data callback with 147 bytes
+[ADSB] Attempting to parse: 7e2600b3634e8b7679c6994ca853e7434e6f7f29bc42067e7e26007d5d83be70aaf7eb9598ec4f3315729e0cdd3783dd6c3f3ab58eaf3ff3565a2579f21707b732d3f8d18a7d5ec284297e7e2600df24a6ae47961f5d61b0322485407ad4082463e0c70af41c11f79a9bb588e9215ae43ceacaa553777033cc846504201de93d77a39c284175a8b35ef370ad0bb6f4c21b2b7e
+[ADSB] Processing hex message: 7e2600b3634e8b7679c6994ca853e7434e6f7f29bc42067e7e26007d5d83be70aaf7eb9598ec4f3315729e0cdd3783dd6c3f3ab58eaf3ff3565a2579f21707b732d3f8d18a7d5ec284297e7e2600df24a6ae47961f5d61b0322485407ad4082463e0c70af41c11f79a9bb588e9215ae43ceacaa553777033cc846504201de93d77a39c284175a8b35ef370ad0bb6f4c21b2b7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 102 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e2600ab8f953ba0b965eda50e4b6c832a2ace4532b772a51344d0684ec7b40c1174762db8e42951983f2102ab2fe850043c13e93d77a39c284175a8b35ef370ad0bb6f4c2e95a7e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e
+[MAIN] Received ADS-B data callback with 102 bytes
+[ADSB] Attempting to parse: 7e2600ab8f953ba0b965eda50e4b6c832a2ace4532b772a51344d0684ec7b40c1174762db8e42951983f2102ab2fe850043c13e93d77a39c284175a8b35ef370ad0bb6f4c2e95a7e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e
+[ADSB] Processing hex message: 7e2600ab8f953ba0b965eda50e4b6c832a2ace4532b772a51344d0684ec7b40c1174762db8e42951983f2102ab2fe850043c13e93d77a39c284175a8b35ef370ad0bb6f4c2e95a7e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 121 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e2600b04be008f1c82368f3d4932a47eedd2e0b462c819ae94f2e0195a3888492c3072db8e42951983f2102ab2fe850043c13e93d77a39c284175a8b35ef370ad0bb6f4c2cb997e7e2600b8d722739e95611205f568c723ea3e2a7d5e9abb637e7e2600b31e93d7b8cbb3e04f7a9977b3d110268d1910f67e
+[MAIN] Received ADS-B data callback with 121 bytes
+==================================================
+    Novatel ProPak6 Navigation Data (NMEA)       
+==================================================
+Timestamp: 2025-06-16 21:59:07 UTC
+
+Position:  No GPS fix
+Altitude:  No data
+Speed:     No data
+Heading:   No data
+GPS:       No data
+
+------------------------------
+Statistics:
+  ADS-B messages parsed: 0
+  Aircraft tracked: 0
+  Parse errors: 0
+  Success rate: 0.0%
+  UDP Listener: Active
+==================================================
+[UDP] Received 140 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26004e9a407158846c8e346749bb96a8cbf470d27e7e260052c9c401cb1bd68c860999985a46eaec18d73e75603234943f9eb27fde7bdf3d2db8e42951983f2102ab2fe850043c13e93d77a39c284175a8b35ef370ad0bb6f4c27bbc7e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e260058eb7b7c9c4c15601611760de2d15b57c456505b7e
+[MAIN] Received ADS-B data callback with 140 bytes
+[ADSB] Attempting to parse: 7e26004e9a407158846c8e346749bb96a8cbf470d27e7e260052c9c401cb1bd68c860999985a46eaec18d73e75603234943f9eb27fde7bdf3d2db8e42951983f2102ab2fe850043c13e93d77a39c284175a8b35ef370ad0bb6f4c27bbc7e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e260058eb7b7c9c4c15601611760de2d15b57c456505b7e
+[ADSB] Processing hex message: 7e26004e9a407158846c8e346749bb96a8cbf470d27e7e260052c9c401cb1bd68c860999985a46eaec18d73e75603234943f9eb27fde7bdf3d2db8e42951983f2102ab2fe850043c13e93d77a39c284175a8b35ef370ad0bb6f4c27bbc7e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e260058eb7b7c9c4c15601611760de2d15b57c456505b7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 221 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26008b9a7d5e479967ccd9c82b84d1ffebcca0aebe9c1a7e7e2600782a927aa431ffbd2ffeb9b5872f7d5dc0aa1aabc17e7e26007d5e368d73a653d567fed00975ca7a9d198872c0fde523296de8390027edf588d7dd80e5884764dfece654d9683f7e7e260078fafb1bb75b1e73153cb172b57838aae94a9e967e7e26004ab4134df3de1e53d013f53157125c7d5ecbdf2b21051c5c1bde8090ea42680e78ad9ab33710aef95b408cd19ff4d8b543e93d77a39c284175a8b35ef370ad0bb6f4c2b41a7e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e
+[MAIN] Received ADS-B data callback with 221 bytes
+[ADSB] Attempting to parse: 7e26008b9a7d5e479967ccd9c82b84d1ffebcca0aebe9c1a7e7e2600782a927aa431ffbd2ffeb9b5872f7d5dc0aa1aabc17e7e26007d5e368d73a653d567fed00975ca7a9d198872c0fde523296de8390027edf588d7dd80e5884764dfece654d9683f7e7e260078fafb1bb75b1e73153cb172b57838aae94a9e967e7e26004ab4134df3de1e53d013f53157125c7d5ecbdf2b21051c5c1bde8090ea42680e78ad9ab33710aef95b408cd19ff4d8b543e93d77a39c284175a8b35ef370ad0bb6f4c2b41a7e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e
+[ADSB] Processing hex message: 7e26008b9a7d5e479967ccd9c82b84d1ffebcca0aebe9c1a7e7e2600782a927aa431ffbd2ffeb9b5872f7d5dc0aa1aabc17e7e26007d5e368d73a653d567fed00975ca7a9d198872c0fde523296de8390027edf588d7dd80e5884764dfece654d9683f7e7e260078fafb1bb75b1e73153cb172b57838aae94a9e967e7e26004ab4134df3de1e53d013f53157125c7d5ecbdf2b21051c5c1bde8090ea42680e78ad9ab33710aef95b408cd19ff4d8b543e93d77a39c284175a8b35ef370ad0bb6f4c2b41a7e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 103 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26007467f974b1f75a2d98b05ef03138ad5c406c9d5a7d5ed6aa982b967559c5fc4bda66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c2688f7e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e
+[MAIN] Received ADS-B data callback with 103 bytes
+[ADSB] Attempting to parse: 7e26007467f974b1f75a2d98b05ef03138ad5c406c9d5a7d5ed6aa982b967559c5fc4bda66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c2688f7e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e
+[ADSB] Processing hex message: 7e26007467f974b1f75a2d98b05ef03138ad5c406c9d5a7d5ed6aa982b967559c5fc4bda66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c2688f7e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+
+Received signal 2
+[UDP] Received 121 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26007b6b318f5420afd611e7effe4f41a92079eae66d60621bf1ecbd76077bae3d28d8729dad869469409e4554e696bb70aae93d77a39c284175a8b35ef370ad0bb6f4c280d67e7e2600c2363a62db8218e9ab387951de0a2d6c1d274c867e7e260094c7a4640d9c847d5d1b1a8eeafe889b4d61bb810e7e
+[MAIN] Received ADS-B data callback with 121 bytes
+[ADSB] Attempting to parse: 7e26007b6b318f5420afd611e7effe4f41a92079eae66d60621bf1ecbd76077bae3d28d8729dad869469409e4554e696bb70aae93d77a39c284175a8b35ef370ad0bb6f4c280d67e7e2600c2363a62db8218e9ab387951de0a2d6c1d274c867e7e260094c7a4640d9c847d5d1b1a8eeafe889b4d61bb810e7e
+[ADSB] Processing hex message: 7e26007b6b318f5420afd611e7effe4f41a92079eae66d60621bf1ecbd76077bae3d28d8729dad869469409e4554e696bb70aae93d77a39c284175a8b35ef370ad0bb6f4c280d67e7e2600c2363a62db8218e9ab387951de0a2d6c1d274c867e7e260094c7a4640d9c847d5d1b1a8eeafe889b4d61bb810e7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+
+Received signal 2
+[UDP] Received 72 bytes from ('192.168.4.1', 63207)
+PS C:\Users\USER\Documents\wifi-udp-location> python .\main.py --adsb --port 4000
+ADS-B mode enabled
+============================================================
+Starting Novatel ProPak6 Navigation Data Toolkit...        
+============================================================
+Configuration:
+  UDP Host: 0.0.0.0
+  UDP Port: 4000
+  Socket Timeout: 5.0s
+C:\Users\USER\Documents\wifi-udp-location\navigation_display.py:45: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  lines.append(f"Timestamp: {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}")
+==================================================
+    Novatel ProPak6 Navigation Data (NMEA)
+==================================================
+Timestamp: 2025-06-16 21:59:13 UTC
+
+Position:  No GPS fix
+Altitude:  No data
+Speed:     No data
+Heading:   No data
+GPS:       No data
+
+------------------------------
+Statistics:
+  ADS-B messages parsed: 0
+  Aircraft tracked: 0
+  Parse errors: 0
+  Success rate: 0.0%
+  UDP Listener: Active
+==================================================
+[UDP] Received 121 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26005be5c6e39b3f8207d9c298abca3edb2fe4b4973fdae518d5291c48004c7ae6a212fcfb1ecd1b866c9e02d0826a7e7e26009c7ce05b7010cdc3a7c889f955a0a2a2a6868ac6f72a2b57c6098cc41c49747ad8ae18bb382f4224976cdaa4603fdc93e93d77a39c284175a8b35ef370ad0bb6f4c2e1267e
+[MAIN] Received ADS-B data callback with 121 bytes
+[ADSB] Attempting to parse: 7e26005be5c6e39b3f8207d9c298abca3edb2fe4b4973fdae518d5291c48004c7ae6a212fcfb1ecd1b866c9e02d0826a7e7e26009c7ce05b7010cdc3a7c889f955a0a2a2a6868ac6f72a2b57c6098cc41c49747ad8ae18bb382f4224976cdaa4603fdc93e93d77a39c284175a8b35ef370ad0bb6f4c2e1267e
+[ADSB] Processing hex message: 7e26005be5c6e39b3f8207d9c298abca3edb2fe4b4973fdae518d5291c48004c7ae6a212fcfb1ecd1b866c9e02d0826a7e7e26009c7ce05b7010cdc3a7c889f955a0a2a2a6868ac6f72a2b57c6098cc41c49747ad8ae18bb382f4224976cdaa4603fdc93e93d77a39c284175a8b35ef370ad0bb6f4c2e1267e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 145 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26007f56a5773bc6e22ac56b3a385d78a5e2077d5d166b7e7e2600a5da66a18b1fcc8dbe276ed26d8afded26c08a6493520edd73008885d1b28b23bcf0c01d6c152c4045bcba9b17bd0b31e93d77a39c284175a8b35ef370ad0bb6f4c2eb5c7e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e7e2600e98c9f01dcfa8c1f992fd4670469f42f510626b27e
+[MAIN] Received ADS-B data callback with 145 bytes
+[ADSB] Attempting to parse: 7e26007f56a5773bc6e22ac56b3a385d78a5e2077d5d166b7e7e2600a5da66a18b1fcc8dbe276ed26d8afded26c08a6493520edd73008885d1b28b23bcf0c01d6c152c4045bcba9b17bd0b31e93d77a39c284175a8b35ef370ad0bb6f4c2eb5c7e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e7e2600e98c9f01dcfa8c1f992fd4670469f42f510626b27e
+[ADSB] Processing hex message: 7e26007f56a5773bc6e22ac56b3a385d78a5e2077d5d166b7e7e2600a5da66a18b1fcc8dbe276ed26d8afded26c08a6493520edd73008885d1b28b23bcf0c01d6c152c4045bcba9b17bd0b31e93d77a39c284175a8b35ef370ad0bb6f4c2eb5c7e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e7e2600e98c9f01dcfa8c1f992fd4670469f42f510626b27e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 102 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e7e2600a5a92ba31835c5e04c8c15984f00673d25edcecef0191d72ac936b3b23942b17e4afef65fa7b04b32c89a930d3e23343e93d77a39c284175a8b35ef370ad0bb6f4c2a0ed7e
+[MAIN] Received ADS-B data callback with 102 bytes
+[ADSB] Attempting to parse: 7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e7e2600a5a92ba31835c5e04c8c15984f00673d25edcecef0191d72ac936b3b23942b17e4afef65fa7b04b32c89a930d3e23343e93d77a39c284175a8b35ef370ad0bb6f4c2a0ed7e
+[ADSB] Processing hex message: 7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e7e2600a5a92ba31835c5e04c8c15984f00673d25edcecef0191d72ac936b3b23942b17e4afef65fa7b04b32c89a930d3e23343e93d77a39c284175a8b35ef370ad0bb6f4c2a0ed7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 96 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e260022baf515923cecebbc6775e9f50c667bb168e4dc44a4d9f8b60575ce82c107bb66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c2421b7e7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e
+[MAIN] Received ADS-B data callback with 96 bytes
+[ADSB] Attempting to parse: 7e260022baf515923cecebbc6775e9f50c667bb168e4dc44a4d9f8b60575ce82c107bb66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c2421b7e7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e
+[ADSB] Processing hex message: 7e260022baf515923cecebbc6775e9f50c667bb168e4dc44a4d9f8b60575ce82c107bb66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c2421b7e7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e
+==================================================
+    Novatel ProPak6 Navigation Data (NMEA)       
+==================================================
+Timestamp: 2025-06-16 21:59:14 UTC
+
+Position:  No GPS fix
+Altitude:  No data
+Speed:     No data
+Heading:   No data
+GPS:       No data
+
+------------------------------
+Statistics:
+  ADS-B messages parsed: 0
+  Aircraft tracked: 0
+  Parse errors: 0
+  Success rate: 0.0%
+  UDP Listener: Active
+==================================================
+[UDP] Received 145 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e260093cd80823fe2103939f6b9773d1cc846465c578e70602585574041c4b5fb91b827faa46ddb09884a97b77343357e7e2600d825eb7b007ff6c882bff22d9f9d08276647f11d4f478b1b6750dbca6e5b792466241a3efc2296d8dd70324859d48eb6e93d77a39c284175a8b35ef370ad0bb6f4c20a017e7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e
+[MAIN] Received ADS-B data callback with 145 bytes
+[ADSB] Attempting to parse: 7e260093cd80823fe2103939f6b9773d1cc846465c578e70602585574041c4b5fb91b827faa46ddb09884a97b77343357e7e2600d825eb7b007ff6c882bff22d9f9d08276647f11d4f478b1b6750dbca6e5b792466241a3efc2296d8dd70324859d48eb6e93d77a39c284175a8b35ef370ad0bb6f4c20a017e7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e
+[ADSB] Processing hex message: 7e260093cd80823fe2103939f6b9773d1cc846465c578e70602585574041c4b5fb91b827faa46ddb09884a97b77343357e7e2600d825eb7b007ff6c882bff22d9f9d08276647f11d4f478b1b6750dbca6e5b792466241a3efc2296d8dd70324859d48eb6e93d77a39c284175a8b35ef370ad0bb6f4c20a017e7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 73 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26002b450e2ff28724ea5e3009e74a938863c5e07d5e2436ca4545e0c07571af8e2c87f87916d6ca304ffe87d614c5727f5147e93d77a39c284175a8b35ef370ad0bb6f4c29d787e
+[MAIN] Received ADS-B data callback with 73 bytes
+[ADSB] Attempting to parse: 7e26002b450e2ff28724ea5e3009e74a938863c5e07d5e2436ca4545e0c07571af8e2c87f87916d6ca304ffe87d614c5727f5147e93d77a39c284175a8b35ef370ad0bb6f4c29d787e
+[ADSB] Processing hex message: 7e26002b450e2ff28724ea5e3009e74a938863c5e07d5e2436ca4545e0c07571af8e2c87f87916d6ca304ffe87d614c5727f5147e93d77a39c284175a8b35ef370ad0bb6f4c29d787e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 175 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e260090c99d6cc2dea233f095ec56182fcaab1ab0b4ef7e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e7e2600dd598d6bdc4ae953912208efed6ed4d11d0171716afc11e42591c52004dccfa3180e485b9630bb1381b20a82f34f7ff0e93d77a39c284175a8b35ef370ad0bb6f4c220ef7e7e26008b9a7d5e479967ccd9c82b84d1ffebcca0aebe9c1a7e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e
+[MAIN] Received ADS-B data callback with 175 bytes
+[ADSB] Attempting to parse: 7e260090c99d6cc2dea233f095ec56182fcaab1ab0b4ef7e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e7e2600dd598d6bdc4ae953912208efed6ed4d11d0171716afc11e42591c52004dccfa3180e485b9630bb1381b20a82f34f7ff0e93d77a39c284175a8b35ef370ad0bb6f4c220ef7e7e26008b9a7d5e479967ccd9c82b84d1ffebcca0aebe9c1a7e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e
+[ADSB] Processing hex message: 7e260090c99d6cc2dea233f095ec56182fcaab1ab0b4ef7e7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e7e2600dd598d6bdc4ae953912208efed6ed4d11d0171716afc11e42591c52004dccfa3180e485b9630bb1381b20a82f34f7ff0e93d77a39c284175a8b35ef370ad0bb6f4c220ef7e7e26008b9a7d5e479967ccd9c82b84d1ffebcca0aebe9c1a7e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 96 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e260048630a04b0849c153fce4015c3c90d4c66e1830543a3ff00fbd61e3ddd3e026a12f6d8a6c8d59bbc1dcfcf52047a124ee93d77a39c284175a8b35ef370ad0bb6f4c282017e7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e
+[MAIN] Received ADS-B data callback with 96 bytes
+[ADSB] Attempting to parse: 7e260048630a04b0849c153fce4015c3c90d4c66e1830543a3ff00fbd61e3ddd3e026a12f6d8a6c8d59bbc1dcfcf52047a124ee93d77a39c284175a8b35ef370ad0bb6f4c282017e7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e
+==================================================
+    Novatel ProPak6 Navigation Data (NMEA)       
+==================================================
+Timestamp: 2025-06-16 21:59:15 UTC
+
+Position:  No GPS fix
+Altitude:  No data
+Speed:     No data
+Heading:   No data
+GPS:       No data
+
+------------------------------
+Statistics:
+  ADS-B messages parsed: 0
+  Aircraft tracked: 0
+  Parse errors: 0
+  Success rate: 0.0%
+  UDP Listener: Active
+==================================================
+[UDP] Received 169 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e2600ffce66d465f2f367a728315489527726f463493a7e7e260047b9308b0549f0b26fef8800d9bd0b42caa890525af9ab64e6dbc93bf6e026af89e787fcfda2ab5c291fdb6c0c7e7e260054aee93213c0edfb55315216443f8deb57bfec86386d35702dd700f705bd12a0e901de3bfa8e8d2b09efe1237aead685e93d77a39c284175a8b35ef370ad0bb6f4c29fae7e7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e
+[MAIN] Received ADS-B data callback with 169 bytes
+[ADSB] Attempting to parse: 7e2600ffce66d465f2f367a728315489527726f463493a7e7e260047b9308b0549f0b26fef8800d9bd0b42caa890525af9ab64e6dbc93bf6e026af89e787fcfda2ab5c291fdb6c0c7e7e260054aee93213c0edfb55315216443f8deb57bfec86386d35702dd700f705bd12a0e901de3bfa8e8d2b09efe1237aead685e93d77a39c284175a8b35ef370ad0bb6f4c29fae7e7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e
+[ADSB] Processing hex message: 7e2600ffce66d465f2f367a728315489527726f463493a7e7e260047b9308b0549f0b26fef8800d9bd0b42caa890525af9ab64e6dbc93bf6e026af89e787fcfda2ab5c291fdb6c0c7e7e260054aee93213c0edfb55315216443f8deb57bfec86386d35702dd700f705bd12a0e901de3bfa8e8d2b09efe1237aead685e93d77a39c284175a8b35ef370ad0bb6f4c29fae7e7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 72 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e260092664e9ff22430b9a51c83d67863ca209ea4cd144746b633c1fc50693e41f03ad12787357bc9ec9ca91194cfe97a3e61e93d77a39c284175a8b35ef370ad0bb6f4c2e1ad7e
+[MAIN] Received ADS-B data callback with 72 bytes
+[ADSB] Attempting to parse: 7e260092664e9ff22430b9a51c83d67863ca209ea4cd144746b633c1fc50693e41f03ad12787357bc9ec9ca91194cfe97a3e61e93d77a39c284175a8b35ef370ad0bb6f4c2e1ad7e
+[ADSB] Processing hex message: 7e260092664e9ff22430b9a51c83d67863ca209ea4cd144746b633c1fc50693e41f03ad12787357bc9ec9ca91194cfe97a3e61e93d77a39c284175a8b35ef370ad0bb6f4c2e1ad7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 126 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e7e260033096083dec22480cc5ede4846a0576c3b47b22b7e7e26009188fe0d362cb96aa3d6a39bfe6e76c035edd1fc1e2a540b22245078d97b6d8bbcf0c01d6c152c4045bcba9b17bd0b31e93d77a39c284175a8b35ef370ad0bb6f4c225e07e
+[MAIN] Received ADS-B data callback with 126 bytes
+[ADSB] Attempting to parse: 7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e7e260033096083dec22480cc5ede4846a0576c3b47b22b7e7e26009188fe0d362cb96aa3d6a39bfe6e76c035edd1fc1e2a540b22245078d97b6d8bbcf0c01d6c152c4045bcba9b17bd0b31e93d77a39c284175a8b35ef370ad0bb6f4c225e07e
+[ADSB] Processing hex message: 7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e7e260033096083dec22480cc5ede4846a0576c3b47b22b7e7e26009188fe0d362cb96aa3d6a39bfe6e76c035edd1fc1e2a540b22245078d97b6d8bbcf0c01d6c152c4045bcba9b17bd0b31e93d77a39c284175a8b35ef370ad0bb6f4c225e07e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 145 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e7e26008fdea87c66e26c47f147776a5b803664eac96ddd659bca7d5e8112c2f6e7c5cad8e901de3bfa8e8d2b09efe1237aead685e93d77a39c284175a8b35ef370ad0bb6f4c262337e7e2600f3019e3c6c770c10aa21d89f1e204fb05778bd6c7e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e
+[MAIN] Received ADS-B data callback with 145 bytes
+[ADSB] Attempting to parse: 7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e7e26008fdea87c66e26c47f147776a5b803664eac96ddd659bca7d5e8112c2f6e7c5cad8e901de3bfa8e8d2b09efe1237aead685e93d77a39c284175a8b35ef370ad0bb6f4c262337e7e2600f3019e3c6c770c10aa21d89f1e204fb05778bd6c7e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e
+[ADSB] Processing hex message: 7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e7e26008fdea87c66e26c47f147776a5b803664eac96ddd659bca7d5e8112c2f6e7c5cad8e901de3bfa8e8d2b09efe1237aead685e93d77a39c284175a8b35ef370ad0bb6f4c262337e7e2600f3019e3c6c770c10aa21d89f1e204fb05778bd6c7e7e260020ef840b5041470cce683b3b8a6b38b12aed40ba7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+==================================================
+    Novatel ProPak6 Navigation Data (NMEA)       
+==================================================
+Timestamp: 2025-06-16 21:59:16 UTC
+
+Position:  No GPS fix
+Altitude:  No data
+Speed:     No data
+Heading:   No data
+GPS:       No data
+
+------------------------------
+Statistics:
+  ADS-B messages parsed: 0
+  Aircraft tracked: 0
+  Parse errors: 0
+  Success rate: 0.0%
+  UDP Listener: Active
+==================================================
+[UDP] Received 170 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e7e26000479cb7d5e334f13e0115070a7371fc3be06740beecfd6b7020cccf39d957f196dafe861c0e8d3edcb2b540b50ae7e7e2600c93fd31540206fcf43cde4ca0852cb45e0e0b4ea7e7e260041b67f872601c95bda15dc4259b48e473e5bdb6fc0a3ad66dcdd57c170938c329e353ccf89e3f54e081487453d8c3fcbe93d77a39c284175a8b35ef370ad0bb6f4c2ecd97e
+[MAIN] Received ADS-B data callback with 170 bytes
+[ADSB] Attempting to parse: 7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e7e26000479cb7d5e334f13e0115070a7371fc3be06740beecfd6b7020cccf39d957f196dafe861c0e8d3edcb2b540b50ae7e7e2600c93fd31540206fcf43cde4ca0852cb45e0e0b4ea7e7e260041b67f872601c95bda15dc4259b48e473e5bdb6fc0a3ad66dcdd57c170938c329e353ccf89e3f54e081487453d8c3fcbe93d77a39c284175a8b35ef370ad0bb6f4c2ecd97e
+[ADSB] Processing hex message: 7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e7e26000479cb7d5e334f13e0115070a7371fc3be06740beecfd6b7020cccf39d957f196dafe861c0e8d3edcb2b540b50ae7e7e2600c93fd31540206fcf43cde4ca0852cb45e0e0b4ea7e7e260041b67f872601c95bda15dc4259b48e473e5bdb6fc0a3ad66dcdd57c170938c329e353ccf89e3f54e081487453d8c3fcbe93d77a39c284175a8b35ef370ad0bb6f4c2ecd97e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 72 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e2600e426f948d082f187d002bbe2fec0f254644c376e43574f90b5fb18cb93ad3bac66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c253c37e
+[MAIN] Received ADS-B data callback with 72 bytes
+[ADSB] Attempting to parse: 7e2600e426f948d082f187d002bbe2fec0f254644c376e43574f90b5fb18cb93ad3bac66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c253c37e
+[ADSB] Processing hex message: 7e2600e426f948d082f187d002bbe2fec0f254644c376e43574f90b5fb18cb93ad3bac66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c253c37e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 104 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e7e2600a53dcf8fc452cb14e5d89a4a192f5911c38a8afe621a7d5dc9b86eb17d5d1cc18a2064ed5d8fdc4463b58017251386e2884fe93d77a39c284175a8b35ef370ad0bb6f4c2b9e07e
+[MAIN] Received ADS-B data callback with 104 bytes
+[ADSB] Attempting to parse: 7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e7e2600a53dcf8fc452cb14e5d89a4a192f5911c38a8afe621a7d5dc9b86eb17d5d1cc18a2064ed5d8fdc4463b58017251386e2884fe93d77a39c284175a8b35ef370ad0bb6f4c2b9e07e
+[ADSB] Processing hex message: 7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e7e2600a53dcf8fc452cb14e5d89a4a192f5911c38a8afe621a7d5dc9b86eb17d5d1cc18a2064ed5d8fdc4463b58017251386e2884fe93d77a39c284175a8b35ef370ad0bb6f4c2b9e07e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 120 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e7e2600697b20947005f7c65f10e2e822e4e3b8829eca4b7e7e260086795553145e85a92598bd995c499c83b231381480edcc99fae3791914bb0b8e66241a3efc2296d8dd70324859d48eb6e93d77a39c284175a8b35ef370ad0bb6f4c2b1d97e
+[MAIN] Received ADS-B data callback with 120 bytes
+[ADSB] Attempting to parse: 7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e7e2600697b20947005f7c65f10e2e822e4e3b8829eca4b7e7e260086795553145e85a92598bd995c499c83b231381480edcc99fae3791914bb0b8e66241a3efc2296d8dd70324859d48eb6e93d77a39c284175a8b35ef370ad0bb6f4c2b1d97e
+[ADSB] Processing hex message: 7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e7e2600697b20947005f7c65f10e2e822e4e3b8829eca4b7e7e260086795553145e85a92598bd995c499c83b231381480edcc99fae3791914bb0b8e66241a3efc2296d8dd70324859d48eb6e93d77a39c284175a8b35ef370ad0bb6f4c2b1d97e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 141 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26005a36c943ac2fd2d2506c69f7c056572189597e7e26004a199bdbd81cf9f03e10e4d17d5e3b72d5030d66af0fe703731c3e9562fa7c664e66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c2423c7e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e260058eb7b7c9c4c15601611760de2d15b57c456505b7e
+[MAIN] Received ADS-B data callback with 141 bytes
+[ADSB] Attempting to parse: 7e26005a36c943ac2fd2d2506c69f7c056572189597e7e26004a199bdbd81cf9f03e10e4d17d5e3b72d5030d66af0fe703731c3e9562fa7c664e66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c2423c7e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e260058eb7b7c9c4c15601611760de2d15b57c456505b7e
+[ADSB] Processing hex message: 7e26005a36c943ac2fd2d2506c69f7c056572189597e7e26004a199bdbd81cf9f03e10e4d17d5e3b72d5030d66af0fe703731c3e9562fa7c664e66636df779af420d94306dd67b1b4c83e93d77a39c284175a8b35ef370ad0bb6f4c2423c7e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e260058eb7b7c9c4c15601611760de2d15b57c456505b7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+
+Received signal 2
+==================================================
+    Novatel ProPak6 Navigation Data (NMEA)
+==================================================
+Timestamp: 2025-06-16 21:59:17 UTC
+
+Position:  No GPS fix
+Altitude:  No data
+Speed:     No data
+Heading:   No data
+GPS:       No data
+
+------------------------------
+Statistics:
+  ADS-B messages parsed: 0
+  Aircraft tracked: 0
+  Parse errors: 0
+  Success rate: 0.0%
+  UDP Listener: Active
+==================================================
+[UDP] Received 196 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e7e2600b740e729a9d86f5867ad949024d4000a29d9589bcea739a7b52c382dc7b4cf0a803c2328cb4392dffdb923f5e37e7e26009549ff53a7dc3fb9bc7d5ee250bf36987d5edc40fc367e7e2600a77f0d70cad1666c6e767686aa5b002450dbe21a4c7c6149a38fd5a80a327f19d8ae18bb382f4224976cdaa4603fdc93e93d77a39c284175a8b35ef370ad0bb6f4c2ba927e7e26008b9a7d5e479967ccd9c82b84d1ffebcca0aebe9c1a7e
+[MAIN] Received ADS-B data callback with 196 bytes
+[ADSB] Attempting to parse: 7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e7e2600b740e729a9d86f5867ad949024d4000a29d9589bcea739a7b52c382dc7b4cf0a803c2328cb4392dffdb923f5e37e7e26009549ff53a7dc3fb9bc7d5ee250bf36987d5edc40fc367e7e2600a77f0d70cad1666c6e767686aa5b002450dbe21a4c7c6149a38fd5a80a327f19d8ae18bb382f4224976cdaa4603fdc93e93d77a39c284175a8b35ef370ad0bb6f4c2ba927e7e26008b9a7d5e479967ccd9c82b84d1ffebcca0aebe9c1a7e
+[ADSB] Processing hex message: 7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e7e2600b740e729a9d86f5867ad949024d4000a29d9589bcea739a7b52c382dc7b4cf0a803c2328cb4392dffdb923f5e37e7e26009549ff53a7dc3fb9bc7d5ee250bf36987d5edc40fc367e7e2600a77f0d70cad1666c6e767686aa5b002450dbe21a4c7c6149a38fd5a80a327f19d8ae18bb382f4224976cdaa4603fdc93e93d77a39c284175a8b35ef370ad0bb6f4c2ba927e7e26008b9a7d5e479967ccd9c82b84d1ffebcca0aebe9c1a7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 73 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e2600c40d1f6a26e82f8979c4170b6c7f65bfe5feb2e74eeed74f7b7d5d1589d543045fcd86aa09d33848ee30ded2238cdf65c4e93d77a39c284175a8b35ef370ad0bb6f4c271fc7e
+[MAIN] Received ADS-B data callback with 73 bytes
+[ADSB] Attempting to parse: 7e2600c40d1f6a26e82f8979c4170b6c7f65bfe5feb2e74eeed74f7b7d5d1589d543045fcd86aa09d33848ee30ded2238cdf65c4e93d77a39c284175a8b35ef370ad0bb6f4c271fc7e
+[ADSB] Processing hex message: 7e2600c40d1f6a26e82f8979c4170b6c7f65bfe5feb2e74eeed74f7b7d5d1589d543045fcd86aa09d33848ee30ded2238cdf65c4e93d77a39c284175a8b35ef370ad0bb6f4c271fc7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 126 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e7e260012c285e063c277424819bf9fc03aac86b2403665e53a024bc7e896817ba4a16354f9d24aa7e7e03679aec1d4f39ea2dee93d77a39c284175a8b35ef370ad0bb6f4c25cef7e
+[MAIN] Received ADS-B data callback with 126 bytes
+[ADSB] Attempting to parse: 7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e7e260012c285e063c277424819bf9fc03aac86b2403665e53a024bc7e896817ba4a16354f9d24aa7e7e03679aec1d4f39ea2dee93d77a39c284175a8b35ef370ad0bb6f4c25cef7e
+[ADSB] Processing hex message: 7e250102042d3a9c86cb270000000002060e3af6557b2b00000000c4f87e7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e7e260012c285e063c277424819bf9fc03aac86b2403665e53a024bc7e896817ba4a16354f9d24aa7e7e03679aec1d4f39ea2dee93d77a39c284175a8b35ef370ad0bb6f4c25cef7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+
+Received signal 2
+[UDP] Received 96 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e26006bc3b956b50af15646f163be59ca3284c658757b7e7e26003a8403f44b49e071b843570801ad00f4fa45dbeb6f2eff4910c2b26310012d8d54f9d24aa7e7e03679aec1d4f39ea2dee93d77a39c284175a8b35ef370ad0bb6f4c230e97e
+[MAIN] Received ADS-B data callback with 96 bytes
+[ADSB] Attempting to parse: 7e26006bc3b956b50af15646f163be59ca3284c658757b7e7e26003a8403f44b49e071b843570801ad00f4fa45dbeb6f2eff4910c2b26310012d8d54f9d24aa7e7e03679aec1d4f39ea2dee93d77a39c284175a8b35ef370ad0bb6f4c230e97e
+[ADSB] Processing hex message: 7e26006bc3b956b50af15646f163be59ca3284c658757b7e7e26003a8403f44b49e071b843570801ad00f4fa45dbeb6f2eff4910c2b26310012d8d54f9d24aa7e7e03679aec1d4f39ea2dee93d77a39c284175a8b35ef370ad0bb6f4c230e97e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+[UDP] Received 140 bytes from ('192.168.4.1', 63207)
+[UDP] ADS-B hex data: 7e260034cd6f6cca1603453ad3a0a7c14bfbe4fedb7e7e260006fb7f3052c02f395ad80572da378634205958e154e536c3cca5fc519c1ae1aed8ae18bb382f4224976cdaa4603fdc93e93d77a39c284175a8b35ef370ad0bb6f4c23e847e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e
+[MAIN] Received ADS-B data callback with 140 bytes
+[ADSB] Attempting to parse: 7e260034cd6f6cca1603453ad3a0a7c14bfbe4fedb7e7e260006fb7f3052c02f395ad80572da378634205958e154e536c3cca5fc519c1ae1aed8ae18bb382f4224976cdaa4603fdc93e93d77a39c284175a8b35ef370ad0bb6f4c23e847e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e
+[ADSB] Processing hex message: 7e260034cd6f6cca1603453ad3a0a7c14bfbe4fedb7e7e260006fb7f3052c02f395ad80572da378634205958e154e536c3cca5fc519c1ae1aed8ae18bb382f4224976cdaa4603fdc93e93d77a39c284175a8b35ef370ad0bb6f4c23e847e7e26005c2a813fbfa0d68d04c32e4fa98a9cc750887e7e260024d1d58f0acb7fe18d21f61013e2ff23fa08f40c7e
+[ADSB] Downlink Format: 15
+[ADSB] Not an ADS-B message (DF=15), skipping
+[MAIN] No data extracted from ADS-B message
+
+Stopping navigation listener...
+[UDP] Receive error: [WinError 10038] An operation was attempted on something that is not a socket[UDP] Listen loop ended. Total packets received: 25
+UDP Listener stopped
+Navigation listener stopped
+PS C:\Users\USER\Documents\wifi-udp-location> 
