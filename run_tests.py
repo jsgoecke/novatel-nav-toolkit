@@ -83,6 +83,8 @@ def run_individual_tests():
         ("tests/test_udp_listener.py", "UDP Listener Tests"),
         ("tests/test_navigation_display.py", "Navigation Display Tests"),
         ("tests/test_main.py", "Main Application Tests"),
+        ("tests/test_udp_replayer.py", "UDP Replay System Tests"),
+        ("tests/test_replay_integration.py", "UDP Replay Integration Tests"),
     ]
     
     results = []

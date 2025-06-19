@@ -4,6 +4,7 @@ A comprehensive Python application designed for real-time navigation and aviatio
 
 ## Features
 
+### Core Navigation Processing
 - **Triple Protocol Support** - NMEA 0183, ADS-B, and Novatel GNSS with protocol auto-detection
 - **Multiple interfaces** - UDP network listening and RS-232/RS-422 serial communication
 - **Real-time UDP listening** on port 4001 (configurable)
@@ -21,6 +22,18 @@ A comprehensive Python application designed for real-time navigation and aviatio
 - **Error handling** with automatic recovery from network and serial issues
 - **Configurable display** with screen clearing and update intervals
 - **Serial port discovery** and configuration tools
+
+### 🚀 UDP Event Replay System
+- **Binary Log Replay** - Replay captured UDP events from real flight data
+- **Interactive Debugging** - Real-time debugging with keyboard controls and breakpoints
+- **Advanced Message Analysis** - Hex dumps, protocol detection, checksum validation
+- **Sophisticated Filtering** - Filter by size, patterns, protocol types, or corruption
+- **Breakpoint System** - Conditional breakpoints on errors, patterns, or message characteristics
+- **Speed Control** - Replay at any speed from 0.1x to 100x real-time
+- **Step-by-Step Mode** - Manual message advancement for detailed analysis
+- **Loop Mode** - Continuous replay for extended testing
+- **Performance Analytics** - Comprehensive statistics and throughput analysis
+- **Message Inspection** - Detailed binary message structure analysis
 
 ## Installation
 
@@ -57,6 +70,8 @@ Options:
 ```
 
 ### Examples
+
+#### Navigation Data Processing
 ```bash
 # Listen for NMEA navigation data over UDP (default)
 python main.py --nmea
@@ -90,6 +105,36 @@ python main.py --parse-message 8D4840D6202CC371C32CE0576098
 
 # Parse ADS-B message with 0x prefix
 python main.py --parse-message 0x8D4840D658C382D690C8AC2863A7
+```
+
+#### UDP Event Replay System
+```bash
+# Basic replay of captured flight data
+python replay_udp_events.py
+
+# Interactive debugging with real-time controls
+python replay_udp_events.py --interactive --pause-on-error
+
+# Fast replay for quick testing
+python replay_udp_events.py --speed 5.0 --loop
+
+# Step-by-step analysis with detailed inspection
+python replay_udp_events.py --step-mode --inspect-on-breakpoint
+
+# Filter specific message types
+python replay_udp_events.py --protocol nmea --verbose
+
+# Filter by message size range
+python replay_udp_events.py --filter-size 100-200
+
+# Breakpoint on specific hex patterns
+python replay_udp_events.py --breakpoint-pattern AA44 --interactive
+
+# Performance testing with statistics
+python replay_udp_events.py --speed 10.0 --save-stats
+
+# Advanced filtering and analysis
+python replay_udp_events.py --skip-corrupted --max-consecutive-errors 3 --verbose
 ```
 
 ## Configuration
@@ -131,6 +176,23 @@ Edit [`config.py`](config.py) to customize settings:
 - `LOG_RAW_NMEA`: Log raw NMEA sentences for debugging
 - `LOG_UDP_TRAFFIC`: Log UDP traffic details
 - `LOG_PARSE_ATTEMPTS`: Log parsing attempts and results
+
+### UDP Replay Settings
+- `REPLAY_LOG_FILE`: UDP events log file path (default: 'data/udp_events.log')
+- `REPLAY_TARGET_HOST`: Target hostname for replay (default: 'localhost')
+- `REPLAY_TARGET_PORT`: Target UDP port for replay (default: 4001)
+- `REPLAY_SPEED_MULTIPLIER`: Replay speed multiplier (default: 1.0)
+- `REPLAY_LOOP_MODE`: Enable continuous loop mode (default: False)
+- `REPLAY_INTER_MESSAGE_DELAY`: Delay between messages in seconds (default: 0.01)
+- `REPLAY_INTERACTIVE_MODE`: Enable interactive debugging (default: False)
+- `REPLAY_STEP_MODE`: Enable step-by-step mode (default: False)
+- `REPLAY_PAUSE_ON_ERROR`: Pause on parsing errors (default: False)
+- `REPLAY_FILTER_MIN_SIZE`: Minimum message size filter (default: 0)
+- `REPLAY_FILTER_MAX_SIZE`: Maximum message size filter (default: infinite)
+- `REPLAY_SKIP_CORRUPTED`: Skip corrupted messages (default: False)
+- `REPLAY_ENABLE_STATISTICS`: Enable statistics collection (default: True)
+- `REPLAY_SAVE_STATISTICS`: Save statistics to file (default: False)
+- `REPLAY_STATISTICS_FILE`: Statistics output file (default: 'logs/replay_statistics.json')
 
 ### GDL-90 Settings
 - `GDL90_ENABLED`: Enable GDL-90 deframing (default: True)
@@ -325,12 +387,21 @@ The application consists of several modular components:
 - [`navigation_display.py`](navigation_display.py) - Human-readable formatting and display
 - [`config.py`](config.py) - Configuration settings and protocol modes
 
+### UDP Replay System
+- [`replay_udp_events.py`](replay_udp_events.py) - Main CLI script for UDP event replay
+- [`udp_replayer.py`](udp_replayer.py) - Core UDP replayer with speed and loop control
+- [`message_inspector.py`](message_inspector.py) - Advanced binary message analysis and inspection
+- [`message_filter.py`](message_filter.py) - Sophisticated message filtering system
+- [`breakpoint_manager.py`](breakpoint_manager.py) - Advanced debugging with conditional breakpoints
+- [`interactive_debugger.py`](interactive_debugger.py) - Real-time interactive debugging interface
+
 ### Testing & Diagnostics
 - [`run_tests.py`](run_tests.py) - Comprehensive test runner
 - [`network_diagnostic.py`](network_diagnostic.py) - Network connectivity diagnostics
 - [`test_udp_sender.py`](test_udp_sender.py) - NMEA test data sender
 - [`test_adsb_sender.py`](test_adsb_sender.py) - ADS-B test data sender
 - [`test_novatel_serial.py`](test_novatel_serial.py) - Novatel serial interface test suite
+- [`tests/test_udp_replayer.py`](tests/test_udp_replayer.py) - UDP replay system test suite
 - [`tests/`](tests/) - Complete pytest-based test suite
 
 ## Network & Serial Setup
@@ -339,6 +410,18 @@ The application consists of several modular components:
 1. Connect to the network providing navigation data
 2. Ensure your device can receive UDP broadcasts on port 4001
 3. Run the application - it will automatically listen for navigation data
+
+### For UDP Replay Testing:
+1. Ensure you have captured UDP events in `data/udp_events.log`
+2. Start the navigation toolkit:
+   ```bash
+   python main.py --auto
+   ```
+3. In another terminal, start the replay:
+   ```bash
+   python replay_udp_events.py --speed 2.0 --verbose
+   ```
+4. Observe parsed navigation data in the first terminal
 
 ### For Novatel ProPak6 GNSS Receiver (Serial Mode):
 1. Connect Novatel receiver to your computer via RS-232/RS-422 cable

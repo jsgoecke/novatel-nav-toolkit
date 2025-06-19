@@ -55,3 +55,35 @@ MAX_PARSE_ERRORS = 10       # Max consecutive parse errors before warning
 RECONNECT_DELAY = 5.0       # seconds to wait before reconnecting
 MAX_SERIAL_ERRORS = 5       # Max consecutive serial errors before stopping
 SERIAL_RECONNECT_DELAY = 2.0 # seconds to wait before serial reconnection
+
+# UDP Replay Configuration
+REPLAY_LOG_FILE = 'data/udp_events.log'
+REPLAY_TARGET_HOST = 'localhost'
+REPLAY_TARGET_PORT = 4001
+REPLAY_SPEED_MULTIPLIER = 1.0
+REPLAY_LOOP_MODE = False
+REPLAY_INTER_MESSAGE_DELAY = 0.01  # seconds
+
+# Interactive Debugging
+REPLAY_INTERACTIVE_MODE = False
+REPLAY_STEP_MODE = False
+REPLAY_PAUSE_ON_ERROR = False
+REPLAY_HEX_DUMP_WIDTH = 16
+REPLAY_MAX_INSPECT_BYTES = 1024
+
+# Message Filtering
+REPLAY_FILTER_MIN_SIZE = 0
+REPLAY_FILTER_MAX_SIZE = float('inf')
+REPLAY_FILTER_PATTERNS = []
+REPLAY_SKIP_CORRUPTED = False
+
+# Breakpoints
+REPLAY_BREAKPOINT_ON_ERRORS = False
+REPLAY_BREAKPOINT_PATTERNS = []
+REPLAY_MAX_CONSECUTIVE_ERRORS = 10
+
+# Statistics
+REPLAY_ENABLE_STATISTICS = True
+REPLAY_STATISTICS_INTERVAL = 100  # messages
+REPLAY_SAVE_STATISTICS = False
+REPLAY_STATISTICS_FILE = 'logs/replay_statistics.json'
