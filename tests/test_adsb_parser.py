@@ -48,24 +48,26 @@ class TestADSBParser:
         # Sample GDL-90 wrapped ADS-B message
         gdl90_data = bytes.fromhex("7E26008B9A7D5E479967CCD9C82B84D1FFEBCCA07E")
         
-        with patch.object(self.parser.gdl90_deframer, 'is_gdl90_frame', return_value=True):
-            with patch.object(self.parser.gdl90_deframer, 'deframe_message') as mock_deframe:
-                # Mock deframer to return valid ADS-B message
-                mock_deframe.return_value = [bytes.fromhex("8D4840D6202CC371C32CE0576098")]
-                
-                with patch('adsb_parser.adsb') as mock_adsb:
-                    mock_adsb.df.return_value = 17
-                    mock_adsb.icao.return_value = "4840D6"
-                    mock_adsb.typecode.return_value = 4
-                    mock_adsb.callsign.return_value = "UAL1234 "
-                    mock_adsb.category.return_value = 2
+        # Mock PASSCOM parser to return False so GDL-90 path is taken
+        with patch.object(self.parser, '_is_passcom_wrapped', return_value=False):
+            with patch.object(self.parser.gdl90_deframer, 'is_gdl90_frame', return_value=True):
+                with patch.object(self.parser.gdl90_deframer, 'deframe_message') as mock_deframe:
+                    # Mock deframer to return valid ADS-B message
+                    mock_deframe.return_value = [bytes.fromhex("8D4840D6202CC371C32CE0576098")]
                     
-                    result = self.parser.parse_message(gdl90_data)
-                    
-                    assert result is not None
-                    assert 'icao' in result
-                    assert result['icao'] == "4840D6"
-                    assert self.parser.gdl90_messages_processed == 1
+                    with patch('adsb_parser.adsb') as mock_adsb:
+                        mock_adsb.df.return_value = 17
+                        mock_adsb.icao.return_value = "4840D6"
+                        mock_adsb.typecode.return_value = 4
+                        mock_adsb.callsign.return_value = "UAL1234 "
+                        mock_adsb.category.return_value = 2
+                        
+                        result = self.parser.parse_message(gdl90_data)
+                        
+                        assert result is not None
+                        assert 'icao' in result
+                        assert result['icao'] == "4840D6"
+                        assert self.parser.gdl90_messages_processed == 1
     
     @patch('config.LOG_PARSE_ATTEMPTS', False)
     def test_parse_message_raw_adsb(self):
@@ -105,14 +107,16 @@ class TestADSBParser:
         """Test message preprocessing for GDL-90 data"""
         gdl90_data = bytes.fromhex("7E26008B9A7E479967CCD9C82B84D1FFEBCCA07E")
         
-        with patch.object(self.parser, '_is_gdl90_wrapped', return_value=True):
-            with patch.object(self.parser.gdl90_deframer, 'deframe_message') as mock_deframe:
-                mock_deframe.return_value = [bytes.fromhex("8B9A7E479967CCD9C82B84D1FFEBCCA0")]
-                
-                result = self.parser._preprocess_message(gdl90_data)
-                
-                assert len(result) == 1
-                assert self.parser.gdl90_messages_processed == 1
+        # Mock PASSCOM parser to return False so GDL-90 path is taken
+        with patch.object(self.parser, '_is_passcom_wrapped', return_value=False):
+            with patch.object(self.parser, '_is_gdl90_wrapped', return_value=True):
+                with patch.object(self.parser.gdl90_deframer, 'deframe_message') as mock_deframe:
+                    mock_deframe.return_value = [bytes.fromhex("8B9A7E479967CCD9C82B84D1FFEBCCA0")]
+                    
+                    result = self.parser._preprocess_message(gdl90_data)
+                    
+                    assert len(result) == 1
+                    assert self.parser.gdl90_messages_processed == 1
     
     def test_preprocess_message_raw(self):
         """Test message preprocessing for raw data"""
@@ -189,14 +193,16 @@ class TestADSBParser:
         """Test extraction of position data (TC 9-18)"""
         with patch('adsb_parser.adsb') as mock_adsb:
             mock_adsb.position_with_ref.return_value = (37.7749, -122.4194)
-            mock_adsb.altitude.return_value = 35000
-            
-            result = self.parser._extract_aviation_data("test_msg", "4840D6", 11)
-            
-            assert result is not None
-            assert result['latitude'] == 37.7749
-            assert result['longitude'] == -122.4194
-            assert result['altitude_ft'] == 35000
+            # Mock the altitude decoder to return enhanced altitude data
+            with patch.object(self.parser.altitude_decoder, 'decode_altitude') as mock_altitude_decoder:
+                mock_altitude_decoder.return_value = {'altitude_baro_ft': 35000}
+                
+                result = self.parser._extract_aviation_data("test_msg", "4840D6", 11)
+                
+                assert result is not None
+                assert result['latitude'] == 37.7749
+                assert result['longitude'] == -122.4194
+                assert result['altitude_baro_ft'] == 35000
     
     def test_extract_aviation_data_velocity(self):
         """Test extraction of velocity data (TC 19)"""

@@ -87,3 +87,37 @@ REPLAY_ENABLE_STATISTICS = True
 REPLAY_STATISTICS_INTERVAL = 100  # messages
 REPLAY_SAVE_STATISTICS = False
 REPLAY_STATISTICS_FILE = 'logs/replay_statistics.json'
+
+# NovAtel PASSCOM Settings
+ENABLE_PASSCOM_PARSER = True
+LOG_PASSCOM_FRAMES = False
+LOG_ALTITUDE_DECODING = False
+PASSCOM_FRAME_TIMEOUT_MS = 1000
+
+# Altitude Validation
+MIN_VALID_ALTITUDE_FT = -1000
+MAX_VALID_ALTITUDE_FT = 60000
+ENABLE_ALTITUDE_SANITY_CHECKS = True
+ALTITUDE_CHANGE_RATE_LIMIT_FPM = 6000  # Maximum climb/descent rate
+
+# Frame Filtering
+ACCEPTED_DOWNLINK_FORMATS = [17, 18]  # ADS-B ES
+REQUIRE_CRC_VALIDATION = True
+ENABLE_GEOMETRIC_ALTITUDE = True
+
+# Performance Settings
+PASSCOM_BUFFER_SIZE = 4096
+MAX_FRAMES_PER_PACKET = 10
+
+# JSON Event Logging
+ENABLE_JSON_EVENT_LOGGING = False   # Enable JSON event streaming to json_events.log
+JSON_EVENTS_LOG_FILE = 'logs/json_events.log'  # JSON events log file path
+
+# Comprehensive JSON Logging (separate from basic JSON events)
+ENABLE_COMPREHENSIVE_JSON_LOGGING = False  # Comprehensive decoded message logging
+COMPREHENSIVE_JSON_LOG_FILE = 'logs/decoded_messages.log'  # Comprehensive log file
+INCLUDE_RAW_MESSAGE_DATA = True  # Include raw hex/binary data in logs
+INCLUDE_PARSING_METADATA = True  # Include parsing timestamps and statistics
+INCLUDE_GPS_METADATA = True     # Include GPS week, time, and timing data
+INCLUDE_SIGNAL_QUALITY = True   # Include PDOP, HDOP, accuracy, satellite count
+INCLUDE_PERFORMANCE_METRICS = True  # Include parsing duration and validation

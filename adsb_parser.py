@@ -1,6 +1,6 @@
 """
 ADS-B Message Parser for Aviation Data
-Enhanced with GDL-90 deframing support
+Enhanced with GDL-90 deframing and NovAtel PASSCOM support
 """
 
 import time
@@ -9,6 +9,8 @@ from typing import Dict, Optional, Any, List
 from pyModeS.decoder import adsb
 import config
 from gdl90_deframer import GDL90Deframer
+from novatel_passcom_parser import NovAtelPasscomParser
+from adsb_altitude_decoder import ADSBAltitudeDecoder
 from logger import logger
 
 
@@ -24,6 +26,16 @@ class ADSBParser:
         self.gdl90_deframer = GDL90Deframer()
         self.gdl90_messages_processed = 0
         self.raw_messages_processed = 0
+        
+        # Initialize new components
+        if config.ENABLE_PASSCOM_PARSER:
+            self.passcom_parser = NovAtelPasscomParser()
+            self.passcom_messages_processed = 0
+        else:
+            self.passcom_parser = None
+            self.passcom_messages_processed = 0
+            
+        self.altitude_decoder = ADSBAltitudeDecoder()
         
     def parse_message(self, message: bytes) -> Optional[Dict[str, Any]]:
         """
@@ -70,7 +82,7 @@ class ADSBParser:
         """
         Preprocess raw message to extract ADS-B payloads
         
-        Handles both GDL-90 wrapped and raw Mode S messages
+        Handles GDL-90 wrapped, PASSCOM wrapped, and raw Mode S messages
         
         Args:
             raw_message: Raw message bytes
@@ -78,8 +90,27 @@ class ADSBParser:
         Returns:
             List of ADS-B payload bytes
         """
+        # Check if this looks like NovAtel PASSCOM wrapped data
+        if self.passcom_parser and self._is_passcom_wrapped(raw_message):
+            if config.LOG_PARSE_ATTEMPTS:
+                logger.info(f"[ADSB] Detected NovAtel PASSCOM wrapped data")
+            
+            self.passcom_messages_processed += 1
+            
+            # Use PASSCOM parser to extract ADS-B messages
+            passcom_messages = self.passcom_parser.parse_passcom_frame(raw_message)
+            
+            if config.LOG_PARSE_ATTEMPTS and passcom_messages:
+                logger.info(f"[ADSB] Extracted {len(passcom_messages)} ADS-B messages from PASSCOM")
+                for i, msg in enumerate(passcom_messages):
+                    if len(msg) > 0:
+                        df = (msg[0] >> 3) & 0x1F
+                        logger.info(f"[ADSB] PASSCOM message {i+1}: {msg.hex()} (DF={df})")
+            
+            return passcom_messages
+        
         # Check if this looks like GDL-90 wrapped data
-        if self._is_gdl90_wrapped(raw_message):
+        elif self._is_gdl90_wrapped(raw_message):
             if config.LOG_PARSE_ATTEMPTS:
                 logger.info(f"[ADSB] Detected GDL-90 wrapped data")
             
@@ -116,6 +147,20 @@ class ADSBParser:
         """
         return self.gdl90_deframer.is_gdl90_frame(data)
     
+    def _is_passcom_wrapped(self, data: bytes) -> bool:
+        """
+        Detect if data appears to be NovAtel PASSCOM wrapped
+        
+        Args:
+            data: Raw message bytes
+            
+        Returns:
+            True if data looks like PASSCOM format
+        """
+        if not self.passcom_parser:
+            return False
+        return self.passcom_parser.is_passcom_frame(data)
+    
     def _parse_adsb_payload(self, adsb_payload: bytes) -> Optional[Dict[str, Any]]:
         """
         Parse a single ADS-B payload (14 bytes)
@@ -141,10 +186,11 @@ class ADSBParser:
         if config.LOG_PARSE_ATTEMPTS:
             logger.info(f"[ADSB] Downlink Format: {df}")
         
-        # Check if it's an ADS-B message (DF=17, 18, or 19)
-        if df not in [17, 18, 19]:
+        # Check if it's an accepted ADS-B message
+        accepted_dfs = getattr(config, 'ACCEPTED_DOWNLINK_FORMATS', [17, 18, 19])
+        if df not in accepted_dfs:
             if config.LOG_PARSE_ATTEMPTS:
-                logger.error(f"[ADSB] Not an ADS-B message (DF={df}), skipping")
+                logger.error(f"[ADSB] Not an accepted ADS-B message (DF={df}), skipping")
             return None
             
         self.messages_parsed += 1
@@ -197,11 +243,24 @@ class ADSBParser:
                 except:
                     pass
                 
-                # Get altitude for airborne messages
+                # Get altitude for airborne messages using enhanced decoder
                 if 9 <= tc <= 18:
-                    alt = adsb.altitude(raw_msg)
-                    if alt:
-                        data['altitude_ft'] = alt
+                    altitude_data = self.altitude_decoder.decode_altitude(raw_msg, tc)
+                    if altitude_data:
+                        data.update(altitude_data)
+                        
+                        # Also try legacy decoder for comparison if logging enabled
+                        if config.LOG_ALTITUDE_DECODING:
+                            try:
+                                legacy_alt = adsb.altitude(raw_msg)
+                                if legacy_alt:
+                                    data['altitude_legacy_ft'] = legacy_alt
+                                    if 'altitude_baro_ft' in altitude_data:
+                                        diff = abs(altitude_data['altitude_baro_ft'] - legacy_alt)
+                                        if diff > 100:  # More than 100 ft difference
+                                            logger.warning(f"[ADSB] Altitude decoder difference: enhanced={altitude_data['altitude_baro_ft']}, legacy={legacy_alt}, diff={diff} ft")
+                            except:
+                                pass
             
             # Airborne velocity (TC 19)
             elif tc == 19:
@@ -210,6 +269,13 @@ class ADSBParser:
                     data['speed_knots'] = velocity[0] if velocity[0] else None
                     data['heading'] = velocity[1] if velocity[1] else None
                     data['vertical_rate'] = velocity[2] if velocity[2] else None
+            
+            # Geometric altitude (TC 31)
+            elif tc == 31:
+                if config.ENABLE_GEOMETRIC_ALTITUDE:
+                    altitude_data = self.altitude_decoder.decode_altitude(raw_msg, tc)
+                    if altitude_data:
+                        data.update(altitude_data)
             
             return data if len(data) > 3 else None  # Return only if we got more than basic fields
             
@@ -229,8 +295,9 @@ class ADSBParser:
     def get_stats(self) -> Dict[str, int]:
         """Get parser statistics"""
         gdl90_stats = self.gdl90_deframer.get_stats()
+        altitude_stats = self.altitude_decoder.get_stats()
         
-        return {
+        stats = {
             'messages_parsed': self.messages_parsed,
             'parse_errors': self.parse_error_count,
             'success_rate': round((self.messages_parsed / max(1, self.messages_parsed + self.parse_error_count)) * 100, 1),
@@ -239,8 +306,30 @@ class ADSBParser:
             'raw_messages_processed': self.raw_messages_processed,
             'gdl90_frames_processed': gdl90_stats['frames_processed'],
             'gdl90_adsb_found': gdl90_stats['adsb_messages_found'],
-            'gdl90_success_rate': gdl90_stats['success_rate']
+            'gdl90_success_rate': gdl90_stats['success_rate'],
+            'passcom_messages_processed': self.passcom_messages_processed
         }
+        
+        # Add PASSCOM stats if parser is enabled
+        if self.passcom_parser:
+            passcom_stats = self.passcom_parser.get_stats()
+            stats.update({
+                'passcom_frames_processed': passcom_stats['frames_processed'],
+                'passcom_success_rate': passcom_stats['success_rate'],
+                'passcom_mode_s_frames': passcom_stats['mode_s_frames_extracted'],
+                'passcom_ascii_hex_conversions': passcom_stats['ascii_hex_conversions']
+            })
+        
+        # Add altitude decoder stats
+        stats.update({
+            'altitudes_decoded': altitude_stats['altitudes_decoded'],
+            'barometric_altitudes': altitude_stats['barometric_altitudes'],
+            'geometric_altitudes': altitude_stats['geometric_altitudes'],
+            'altitude_decode_success_rate': altitude_stats['success_rate'],
+            'altitude_sanity_failures': altitude_stats['sanity_check_failures']
+        })
+        
+        return stats
     
     def reset_stats(self):
         """Reset parser statistics"""
@@ -248,4 +337,8 @@ class ADSBParser:
         self.messages_parsed = 0
         self.gdl90_messages_processed = 0
         self.raw_messages_processed = 0
+        self.passcom_messages_processed = 0
         self.gdl90_deframer.reset_stats()
+        if self.passcom_parser:
+            self.passcom_parser.reset_stats()
+        self.altitude_decoder.reset_stats()

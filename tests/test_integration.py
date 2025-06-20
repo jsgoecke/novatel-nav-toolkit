@@ -93,21 +93,29 @@ class TestSystemIntegration:
         # Test with GDL-90 wrapped ADS-B data
         gdl90_data = bytes.fromhex("7E26008B9A7D5E479967CCD9C82B84D1FFEBCCA07E")
         
-        # Mock pyModeS responses for the expected deframed message
-        with patch('adsb_parser.adsb') as mock_adsb:
-            mock_adsb.df.return_value = 17
-            mock_adsb.icao.return_value = "4840D6"
-            mock_adsb.typecode.return_value = 4
-            mock_adsb.callsign.return_value = "UAL1234 "
-            mock_adsb.category.return_value = 2
-            
-            # Process message
-            result = adsb_parser.parse_message(gdl90_data)
-            
-            # Verify parsing worked
-            assert result is not None
-            assert result['icao'] == "4840D6"
-            assert result['callsign'] == "UAL1234"
+        # Mock PASSCOM parser to return False so GDL-90 path is taken
+        with patch.object(adsb_parser, '_is_passcom_wrapped', return_value=False):
+            # Mock GDL-90 deframing
+            with patch.object(adsb_parser.gdl90_deframer, 'is_gdl90_frame', return_value=True):
+                with patch.object(adsb_parser.gdl90_deframer, 'deframe_message') as mock_deframe:
+                    # Mock deframer to return valid ADS-B message
+                    mock_deframe.return_value = [bytes.fromhex("8D4840D6202CC371C32CE0576098")]
+                    
+                    # Mock pyModeS responses for the expected deframed message
+                    with patch('adsb_parser.adsb') as mock_adsb:
+                        mock_adsb.df.return_value = 17
+                        mock_adsb.icao.return_value = "4840D6"
+                        mock_adsb.typecode.return_value = 4
+                        mock_adsb.callsign.return_value = "UAL1234 "
+                        mock_adsb.category.return_value = 2
+                        
+                        # Process message
+                        result = adsb_parser.parse_message(gdl90_data)
+                        
+                        # Verify parsing worked
+                        assert result is not None
+                        assert result['icao'] == "4840D6"
+                        assert result['callsign'] == "UAL1234"
             
             # Get aviation data
             aviation_data = adsb_parser.get_latest_aviation_data()

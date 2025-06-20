@@ -13,6 +13,7 @@ from typing import Optional
 # Import config always (no dependencies)
 import config
 from logger import logger, console_print
+from json_event_logger import json_event_logger, comprehensive_json_logger
 
 # Import required modules at module level for testing
 try:
@@ -223,11 +224,20 @@ class NavigationListener:
         
         # Parse Novatel message
         if self.novatel_parser:
+            parse_start_time = time.time()
             parsed_data = self.novatel_parser.parse_message(data)
             
             if parsed_data:
                 if config.LOG_NOVATEL_MESSAGES:
                     logger.novatel_msg(f"Successfully parsed Novatel data: {parsed_data}")
+                # Log to comprehensive JSON if enabled
+                comprehensive_json_logger.log_decoded_message(
+                    data=parsed_data,
+                    source="NovAtel",
+                    parser_name="NovatelParser",
+                    raw_data=data,
+                    parsing_start_time=parse_start_time
+                )
             else:
                 if config.LOG_NOVATEL_MESSAGES:
                     logger.novatel_msg("No data extracted from Novatel message")
@@ -269,11 +279,20 @@ class NavigationListener:
         
         # Parse Novatel message
         if self.novatel_parser:
+            parse_start_time = time.time()
             parsed_data = self.novatel_parser.parse_message(data)
             
             if parsed_data:
                 if config.LOG_NOVATEL_MESSAGES:
                     logger.novatel_msg(f"Successfully parsed Novatel data: {parsed_data}")
+                # Log to comprehensive JSON if enabled
+                comprehensive_json_logger.log_decoded_message(
+                    data=parsed_data,
+                    source="NovAtel",
+                    parser_name="NovatelParser",
+                    raw_data=data,
+                    parsing_start_time=parse_start_time
+                )
             else:
                 if config.LOG_NOVATEL_MESSAGES:
                     logger.novatel_msg("No data extracted from Novatel message")
@@ -298,10 +317,21 @@ class NavigationListener:
                 logger.main_process(f"Processing sentence {i+1}/{len(sentences)}: {repr(sentence)}")
                 
                 # Parse NMEA sentence
+                parse_start_time = time.time()
                 parsed_data = self.nmea_parser.parse_sentence(sentence)
                 
                 if parsed_data:
                     logger.main_process(f"Successfully parsed NMEA data: {parsed_data}")
+                    # Log to JSON events if enabled
+                    json_event_logger.log_nmea_event(parsed_data)
+                    # Log to comprehensive JSON if enabled
+                    comprehensive_json_logger.log_decoded_message(
+                        data=parsed_data,
+                        source="NMEA",
+                        parser_name="NMEAParser",
+                        raw_data=sentence,
+                        parsing_start_time=parse_start_time
+                    )
                 else:
                     logger.main_process("No data extracted from NMEA sentence")
                 
@@ -317,10 +347,21 @@ class NavigationListener:
         logger.udp_traffic(f"Received ADS-B data callback with {len(data)} bytes")
         
         # Parse ADS-B message
+        parse_start_time = time.time()
         parsed_data = self.adsb_parser.parse_message(data)
         
         if parsed_data:
             logger.info(f"Successfully parsed ADS-B data: {parsed_data}")
+            # Log to JSON events if enabled
+            json_event_logger.log_adsb_event(parsed_data)
+            # Log to comprehensive JSON if enabled
+            comprehensive_json_logger.log_decoded_message(
+                data=parsed_data,
+                source="ADS-B",
+                parser_name="ADSBParser",
+                raw_data=data,
+                parsing_start_time=parse_start_time
+            )
         else:
             logger.debug("No data extracted from ADS-B message")
     
@@ -434,7 +475,19 @@ def parse_single_message(message_hex: str) -> int:
         
         # Create parser and parse message
         parser = ADSBParser()
+        parse_start_time = time.time()
         result = parser.parse_message(message_bytes)
+        
+        # Log to comprehensive JSON if enabled
+        if result and comprehensive_json_logger.is_enabled():
+            comprehensive_json_logger.log_decoded_message(
+                data=result,
+                source="ADS-B",
+                parser_name="ADSBParser",
+                raw_data=message_bytes,
+                parsing_start_time=parse_start_time
+            )
+            logger.info(f"Logged to comprehensive JSON: {comprehensive_json_logger.log_file}")
         
         # Restore original logging setting
         config.LOG_PARSE_ATTEMPTS = original_log_setting
@@ -491,6 +544,8 @@ def print_usage():
     print("  -s, --serial PORT         Serial port for Novatel interface (e.g., /dev/ttyUSB0, COM1)")
     print("  -b, --baud RATE           Serial baud rate (default: 115200)")
     print("  -v, --verbose             Enable verbose logging")
+    print("  --json-events             Stream parsed data to json_events.log")
+    print("  --comprehensive-json      Enable comprehensive JSON logging with rich metadata")
     print("  --no-clear                Don't clear screen between updates")
     print("  --adsb                    Enable ADS-B mode for aviation data")
     print("  --nmea                    Enable NMEA mode for navigation data (default)")
@@ -585,6 +640,13 @@ def main():
             config.LOG_PARSE_ATTEMPTS = True
             config.LOG_SERIAL_TRAFFIC = True
             config.LOG_NOVATEL_MESSAGES = True
+        elif arg == '--json-events':
+            config.ENABLE_JSON_EVENT_LOGGING = True
+            logger.info("JSON event logging enabled")
+        elif arg == '--comprehensive-json':
+            config.ENABLE_COMPREHENSIVE_JSON_LOGGING = True
+            comprehensive_json_logger.enable()
+            logger.info("Comprehensive JSON logging enabled")
         elif arg == '--no-clear':
             config.CLEAR_SCREEN = False
         elif arg == '--adsb':
