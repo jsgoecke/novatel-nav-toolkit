@@ -15,4 +15,7 @@ jobs:
       - run: pip install pytest -r requirements.txt
       - run: pip install --editable . || true
       - run: python run_tests.py
+      - run: pytest --ignore=tests/test_adsb_altitude_decoder.py
+                    --ignore=tests/test_novatel_parser.py
+                    --ignore=tests/test_novatel_passcom_parser.py
       - run: pytest || true
